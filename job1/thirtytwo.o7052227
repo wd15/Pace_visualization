@@ -1,0 +1,20 @@
+---------------------------------------
+Begin PBS Prologue Tue Nov 16 12:35:54 EST 2021
+Job ID:     7052227.sched-hive.pace.gatech.edu
+User ID:    byucel3
+Job name:   thirtytwo
+Queue:      hive-himem
+End PBS Prologue Tue Nov 16 12:35:54 EST 2021
+---------------------------------------
+---------------------------------------
+Begin PBS Epilogue Tue Nov 16 12:37:38 EST 2021
+Job ID:     7052227.sched-hive.pace.gatech.edu
+User ID:    byucel3
+Job name:   thirtytwo
+Resources:  nodes=1:ppn=32,mem=96gb,walltime=24:00:00,neednodes=1:ppn=32
+Rsrc Used:  cput=00:01:33,vmem=721404kb,walltime=00:01:44,mem=32604kb,energy_used=0
+Queue:      hive-himem
+Nodes:     
+atl1-1-01-018-35.pace.gatech.edu
+End PBS Epilogue Tue Nov 16 12:37:38 EST 2021
+---------------------------------------
