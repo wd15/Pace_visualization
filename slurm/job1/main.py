@@ -31,8 +31,8 @@ def get_model(batch_size):
 
 
 def prepare_data(n_sample, n_chunk):
-    x_data = da.from_zarr("/storage/home/hhive1/byucel3/data/homogenizationdata/x_data_shuffled.zarr" , chunks=(100, -1))
-    y_data = np.load("/storage/home/hhive1/byucel3/data/homogenizationdata/y_data_shuffled.npy")
+    x_data = da.from_zarr("../data/x_data_shuffled.zarr" , chunks=(100, -1))
+    y_data = np.load("../data/y_data_shuffled.npy")
     y_data = da.from_array(y_data, chunks=(100, -1))
 
     # resize data

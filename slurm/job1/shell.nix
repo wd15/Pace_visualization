@@ -8,12 +8,12 @@
 }:
 let
   file_path = builtins.toString ../.;
-  pkgs = import (builtins.fetchTarball "file://${file_path}/${tag}.tar.gz") {};
-#  pkgs = import (builtins.fetchTarball "file://${file_path}/nixpkgs-21.11.tar.gz") {};  
+#  pkgs = import (builtins.fetchTarball "file://${file_path}/${tag}.tar.gz") {};
+  pkgs = import (builtins.fetchTarball "file://${file_path}/nixpkgs-21.11.tar.gz") {};  
   pymkssrc = builtins.fetchTarball "file://${file_path}/pymks-${pymksVersion}.tar.gz";
   pymks = pypkgs.callPackage "${pymkssrc}/default.nix" { graspi = null; };
   pypkgs = pkgs.python3Packages;
-  extra = with pypkgs; [ black pylint flake8 zarr pymks h5py memory_profiler ];
+  extra = with pypkgs; [ black pylint flake8 zarr pymks h5py memory_profiler click ];
 in
   (pymks.overridePythonAttrs (old: rec {
 
